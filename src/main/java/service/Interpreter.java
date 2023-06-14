@@ -2,7 +2,6 @@ package service;
 
 import service.command.ConvertCommand;
 import service.command.HelpCommand;
-import service.command.ViewCommand;
 import service.command.common.BaseCommand;
 import service.command.common.CommandType;
 
@@ -24,7 +23,6 @@ public class Interpreter {
         this.commandMap = new ConcurrentHashMap<>();
         commandMap.put(CommandType.HELP, new HelpCommand());
         commandMap.put(CommandType.CONVERT, new ConvertCommand());
-        commandMap.put(CommandType.VIEW, new ViewCommand());
     }
 
 
